@@ -17,7 +17,7 @@
 
     function registrer() {
       if (!validateInputs()) {
-        return; // Don't proceed if inputs are not valid
+        return;
       }
       let fornavn = document.getElementById("fornavn").value.trim();
       let etternavn = document.getElementById("etternavn").value;
