@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Oblig1 DATA1700</title>
+    <script src="olig1.js"></script>
+</head>
+<body>
+<h1>Bestilling av kinobilletter</h1>
+<table>
+    <tr>
+        <td>Velg film: </td>
+        <td>
+            <select id="velgFilm">
+                <option hidden="Velg film">Velg film</option>
+                <option>film1</option>
+                <option>film2</option>
+                <option>film3</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>Antall: </td>
+        <td>
+            <input type="text" id="antallBilletter" style="width: 20px">
+            <span style ="color: red" id="antallError"></span>
+        </td>
+    </tr>
+    <tr>
+        <td>Fornavn</td>
+        <td>
+            <input type="text" id="fornavn">
+            <span id="fornavnError" style="color: red;"></span>
+        </td>
+    </tr>
+    <tr>
+        <td>Etternavn</td>
+        <td>
+            <input type="text" id="etternavn">
+            <span id="etternavnError" style="color: red;"></span>
+        </td>
+    </tr>
+    <tr>
+        <td>Telefonnr</td>
+        <td>
+            <input type="text" id="telefonnr">
+            <span id="telefonnrError" style="color: red;"></span>
+        </td>
+    </tr>
+    <tr>
+        <td>Epost</td>
+        <td>
+            <input type="text" id="epost">
+            <span id="epostError" style="color: red;"></span>
+        </td>
+    </tr>
+    <tr>
+        <td><button onclick="registrer()">Kjøp billett</button></td>
+    </tr>
+</table>
+
+<h2>Alle billetter</h2>
+<div id="utInformasjon"></div>
+
+<button onclick="slettBilletter()">Slett alle kunder</button>
+</body>
+</html>
