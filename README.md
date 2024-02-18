@@ -17,5 +17,7 @@ og e-postadresser
 validateInputs() funksjonen validerer alle inndataene fra feltet.
 slettBilletter() funksjonen fjerner alle billetter fra utInformasjon-arrayen og oppdaterer HTML-dokumentet.
 
+Jeg og en annen elev hjalp hverandre med å gjøre ferdig oppgaven
+
 
 
