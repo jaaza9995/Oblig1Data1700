@@ -9,7 +9,7 @@
       for (let i of utInformasjon) {
         ut += "<tr>";
         ut += "<td> " + i.velgFilm + "</td><td>" + i.antallBilletter + "</td>";
-        ut += "<td>" + i.fornavn + "</td><td>" + i.etternavn + "</td><td>" + i.telefonnr + "</td>" + "<td>" + i.epost + "</td>";
+        ut += "<td>" + i.fornavn + "</td><td>" + i.etternavn + "</td><td>" + i.telefonnr + "</td><td>" + i.epost + "</td>";
         ut += "</tr>";
       }
       document.getElementById("utInformasjon").innerHTML = ut;
@@ -19,7 +19,7 @@
       if (!validateInputs()) {
         return;
       }
-      let fornavn = document.getElementById("fornavn").value.trim();
+      let fornavn = document.getElementById("fornavn").value;
       let etternavn = document.getElementById("etternavn").value;
       let telefonnrS = document.getElementById("telefonnr").value;
       let epost = document.getElementById("epost").value;
@@ -34,6 +34,7 @@
         velgFilm: velgFilm,
         antallBilletter: antallBilletter
       };
+
       utInformasjon.push(person);
       document.getElementById("fornavn").value = "";
       document.getElementById("etternavn").value = "";
@@ -107,8 +108,8 @@
       return isValid;
     }
     function slettBilletter() {
-  while(utInformasjon.length != 0){
-    utInformasjon.pop()
+      while(utInformasjon.length != 0){
+      utInformasjon.pop()
   }
   let utInformasjonElement = document.getElementById("utInformasjon");
   utInformasjonElement.innerHTML = " ";
